@@ -475,3 +475,70 @@ contact
     border-color: var(--primary-color);
     box-shadow: 0 0 0 0.25rem rgba(0, 255, 134, 0.25);
 }
+
+/*-----------------
+tour
+-----------------*/
+/* Custom Table */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.custom-table th, 
+.custom-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: var(--dark-bg);
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Custom Tour Grid */
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tour-grid-card {
+    background: var(--card-alt-bg);
+    border: 2px solid var(--dark-bg);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.tour-grid-card:hover {
+    transform: translateY(-3px);
+}
+
+.tour-grid-card h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.tour-grid-card p {
+    font-size: 13px;
+    color: #444444;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .tour-grid {
+        grid-template-columns: 1fr;
+    }
+}
