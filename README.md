@@ -10,7 +10,7 @@ Members:
   Askar Bavgashev
 
 Live Project Link
-Published Website: https://github.com/ZuckerbergWannabe/WEB_midka.git
+Published Website: https://zuckerbergwannabe.github.io/WEB_midka/
 
 
 
