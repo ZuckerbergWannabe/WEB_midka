@@ -54,7 +54,7 @@
                 <div class="gallery-grid">
                     <div class="card h-100">
                         <span class="card-badge">Featured</span>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW1ghDEEoeGrYx0Fw_kegBJIexHgOB_OHAY4robn31mQ&s=10" class="card-img-top" alt="DeBÍ TiRAR MáS FOToS Era" loading="lazy">
+                        <img class="lightbox-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW1ghDEEoeGrYx0Fw_kegBJIexHgOB_OHAY4robn31mQ&s=10" class="card-img-top" alt="DeBÍ TiRAR MáS FOToS Era" loading="lazy">
                         <div class="card-content">
                             <h3>DeBÍ TiRAR MáS FOToS</h3>
                             <p>Promotional artwork photographed in Puerto Rico.</p>
@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="card h-100">
-                        <img src="https://i.scdn.co/image/ab67616d0000b2732ea1f035463d11e1fc3b193d" class="card-img-top" alt="Nadie Sabe Trap Era" loading="lazy">
+                        <img class="lightbox-image" src="https://i.scdn.co/image/ab67616d0000b2732ea1f035463d11e1fc3b193d" class="card-img-top" alt="Nadie Sabe Trap Era" loading="lazy">
                         <div class="card-content">
                             <h3>Nadie Sabe Lo Que Va A Pasar Mañana</h3>
                             <p>Iconic mask aesthetics and high-fashion trap styling.</p>
@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="card h-100">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrISsiks4zW-sHj1C3ZH7IzXP04bk4N52OhLWPeNdrw&s=10" class="card-img-top" alt="Un Verano Sin Ti Album Art" loading="lazy">
+                        <img class="lightbox-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrISsiks4zW-sHj1C3ZH7IzXP04bk4N52OhLWPeNdrw&s=10" class="card-img-top" alt="Un Verano Sin Ti Album Art" loading="lazy">
                         <div class="card-content">
                             <h3>Un Verano Sin Ti</h3>
                             <p>The legendary heart visual identity.</p>
@@ -78,7 +78,7 @@
                     </div>
 
                     <div class="card h-100">
-                        <img src="https://images.genius.com/fea8b559c0913ba2769e1125d32e6db0.1000x1000x1.jpg" class="card-img-top" alt="MONACO Single Cover" loading="lazy">
+                        <img class="lightbox-image" src="https://images.genius.com/fea8b559c0913ba2769e1125d32e6db0.1000x1000x1.jpg" class="card-img-top" alt="MONACO Single Cover" loading="lazy">
                         <div class="card-content">
                             <h3>MONACO Single</h3>
                             <p>Behind-the-scenes Monaco Grand Prix visual shoot.</p>
@@ -86,7 +86,7 @@
                     </div>
 
                     <div class="card h-100">
-                        <img src="https://images.genius.com/0daaff2dd295e55d36bff74242e6f052.1000x1000x1.png" class="card-img-top" alt="Callaita Artwork" loading="lazy">
+                        <img class="lightbox-image" src="https://images.genius.com/0daaff2dd295e55d36bff74242e6f052.1000x1000x1.png" class="card-img-top" alt="Callaita Artwork" loading="lazy">
                         <div class="card-content">
                             <h3>Callaita Single</h3>
                             <p>Tropical sunset visuals for the global smash hit.</p>
@@ -94,7 +94,7 @@
                     </div>
 
                     <div class="card h-100">
-                        <img src="https://i1.sndcdn.com/artworks-5yYoA8hu64nSq2NM-G4QqVw-t500x500.png" class="card-img-top" alt="BOKeTE Track Cover" loading="lazy">
+                        <img class="lightbox-image" src="https://i1.sndcdn.com/artworks-5yYoA8hu64nSq2NM-G4QqVw-t500x500.png" class="card-img-top" alt="BOKeTE Track Cover" loading="lazy">
                         <div class="card-content">
                             <h3>BOKeTE Single</h3>
                             <p>Official single release cover artwork.</p>
@@ -124,5 +124,28 @@
             navLinks.classList.toggle('active');
         });
     </script>
+
+<div id="imageLightbox" class="image-lightbox">
+
+  <button id="lightboxClose" type="button">
+    ✕
+  </button>
+
+  <button id="lightboxPrev" type="button">
+    ❮
+  </button>
+
+  <img id="lightboxPhoto" src="" alt="Gallery photo">
+
+  <button id="lightboxNext" type="button">
+    ❯
+  </button>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/gallery.js"></script>
+
 </body>
 </html>
