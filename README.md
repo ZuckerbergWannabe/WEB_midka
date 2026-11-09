@@ -1,68 +1,130 @@
-Bad Bunny Fan Hub — Midterm Project
-Project Topic: mudic website
 
+Bad Bunny Fan Hub — Midterm & Endterm Project
 
-Group Members 
+Project Topic: Music Website  
 Group: SE-2540
-Members:
-  Darkhan Serikbai
-  Sakenov Danial
-  Askar Bavgashev
-
-Live Project Link
-Published Website: https://zuckerbergwannabe.github.io/WEB_midka/
+Group Members
+Darkhan Serikbai
+Sakenov Danial
+Askar Bavgashev
 
 
+https://zuckerbergwannabe.github.io/WEB_midka/
+https://github.com/ZuckerbergWannabe/WEB_midka
 
-Short Description
-Bad Bunny Fan Hub is a multi-page responsive web application created for fans of Bad Bunny. The project showcases the artist's biography, recent album discography, popular tracks with an interactive audio player, tour schedules, photo galleries, and a contact form for the fan club.
+Project Description
 
-Features Implemented
-1. 5 Connected Pages: Home (index.html), About (about.html), Tour Schedule (tour.html), Gallery (gallery.html), and Contact (contact.html).
-2. Sticky Navigation & Header: Header with Flexbox layout, responsive navigation, and active page highlighting.
-3. Responsive Mobile Menu: Animated burger menu toggling navigation on mobile viewports (<768px).
-4. Custom Audio Player: JS-powered audio player with play/pause, seek bar, and rewind/forward controls.
-5. Interactive Data Table & Custom Grids: CSS Grid layouts for image galleries and tour cards, plus an alternating-color data table.
-6. Fixed Floating Action: "Back to Top" button using fixed positioning.
+Bad Bunny Fan Hub is a responsive, multi-page music website dedicated to the artist Bad Bunny.
+The website provides information about the artist, albums, popular songs, concerts, photo galleries, and fan club registration.
+The Midterm Project focused on HTML, CSS, Bootstrap, responsive layouts, and website design.
+The Endterm Project extends the existing website using JavaScript and jQuery to provide dynamic and interactive functionality.
 
+Website Pages
 
- Technologies Used
-HTML5: Semantic elements (header, main, footer, nav, section).
-CSS3: Custom styles (/css/style.css), CSS Grid, Flexbox, media queries (768px, 480px), positioning (relative, absolute, fixed, sticky),:hover/:focus pseudo-classes
-Bootstrap 5: Grid system and utilities.
+1. Home — Music albums, popular songs, audio player, and dynamic search.
+2. About — Biography and information about Bad Bunny.
+3. Tour — Concert schedules and CRUD management.
+4. Gallery — Photo gallery with an interactive lightbox.
+5. Contact — Contact information and registration form validation.
 
-Requirements Coverage & Technical Details
-CSS Variables primary-color, dark-bg, light-bg, card-alt-bg, font-heading, font-body.
- Positioning Techniques:
-  Relative & Absolute: Badge overlay on album cards .
-  Fixed: Floating top button .
-  Sticky: Dynamic header bar .
-Pseudo-classes: :hover, :focus, :nth-child(even) for alternating rows and cards.
-Media Queries: Breakpoints at 768px  and 480px.
+Midterm Features
 
+- Five interconnected HTML pages.
+- Responsive navigation menu.
+- Sticky header and navigation bar.
+- Custom audio player.
+- CSS Grid and Flexbox layouts.
+- Responsive image gallery.
+- Tour schedule table.
+- Contact form.
+- Back-to-top button.
+- CSS animations and hover effects.
+- Bootstrap components and utilities.
+- Responsive design for desktop, tablet, and mobile devices.
 
+Endterm Features
+1. Registration Form Validation
+Files: contact.html, js/validation.js
+Implemented client-side registration validation using JavaScript and jQuery.
+Features:
+- Required name and email validation.
+- Email format validation using Regular Expressions.
+- Password length validation.
+- Password strength indicator.
+- Password confirmation validation.
+- Real-time error and success messages.
+- Prevention of invalid form submission.
 
-1. Darkhan Serikbai
-CSS Module:  Common Styles & Index Page 
-Key Deliverables:
-  Configured CSS Variables , Google Fonts import, base resetting, and body layout.
-  Styled the global sticky header, navigation links, and responsive burger menu.
-   Created card component styles, buttons, and fixed "Back to Top" button.
-   Designed the Audio Player layout  and  absolute positioning.
-   Built base media queries for headers and players.
+2. Dynamic Search and Filter
+Files:index.html, js/gallery.js
+Implemented a dynamic music search and category filtering system.
+Features:
+- Real-time search without page reloading.
+- Case-insensitive text matching.
+- Category filtering.
+- Combined search and category filtering.
+- Automatic display of matching results.
+- Message when no matching results are found.
 
-2. Sakenov Danial
-CSS Module: Tour Schedule Page 
-Key Deliverables:
-  Created custom table styling  with dark headers and  alternating row backgrounds.
-  Built Custom CSS Grid layout for Tour Highlights (.tour-grid) using 3-column repeat(3, 1fr) structure.
-  Designed interactive hover effects for tour cards (.tour-grid-card:hover).
-  Added responsive breakpoint for .tour-grid to stack vertically on screens under 768px.
+3. Dynamic Table with CRUD Operations
+Files: tour.html, js/crud.js
+Implemented a concert management system using JavaScript and jQuery.
+CRUD functionality:
+- Create: Add new concerts.
+- Read: Display concerts dynamically in a table.
+- Update: Edit existing concert information.
+- Delete: Remove concerts with confirmation.
 
-3. Askar Bavgashev
-CSS Module: Gallery Page & Contact Page .
-Key Deliverables:
-  Developed Custom CSS Grid layout (.gallery-grid) for photo gallery cards.
-   Configured multi-tier responsive breakpoints for the gallery grid (3 columns on desktop, 2 columns at <=768px, 1 column at <=480px).
-   Styled Contact Form control focus states (.form-control:focus) with primary color glow effects.
-   Conducted page layout tests and Bootstrap utility integration across pages.
+Additional features:
+- Form validation for concert information.
+- Dynamic table updates.
+- LocalStorage for saving concert data.
+- Data persistence after page reload.
+
+4. Interactive Image Gallery
+Files: gallery.html, js/gallery.js
+Enhanced the image gallery using jQuery.
+Features:
+- Click an image to open the lightbox.
+- Enlarged image preview.
+- Previous and Next navigation buttons.
+- Smooth fade-in and fade-out animations.
+- Close button.
+- Escape key support.
+- Keyboard arrow navigation.
+
+Technologies Used
+- HTML — Website structure and semantic elements.
+- CSS— Custom styling, layouts, animations, and responsive design.
+- Bootstrap — Responsive grid, forms, tables, buttons, and utilities.
+- jQuery — Event handling, filtering, and animation effects.
+
+Individual Contributions
+
+ Darkhan Serikbai
+
+Endterm Contributions:
+- Developed the concert CRUD system.
+- Implemented dynamic table rendering.
+- Added Create, Read, Update, and Delete operations.
+- Implemented LocalStorage persistence.
+- Added delete confirmation functionality.
+
+ Sakenov Danial
+
+Endterm Contributions:
+- Implemented dynamic music search.
+- Developed category filtering.
+- Added real-time jQuery event handling.
+- Implemented the image gallery lightbox.
+- Added image navigation and fade animations.
+
+ Askar Bavgashev
+
+Endterm Contributions:
+- Implemented registration form validation.
+- Added email validation with RegEx.
+- Created the password strength indicator.
+- Implemented password confirmation.
+- Added real-time validation feedback.
+
